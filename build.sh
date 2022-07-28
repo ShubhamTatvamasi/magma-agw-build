@@ -13,6 +13,7 @@ git clone https://github.com/magma/magma.git --depth 1
 sudo mkdir -p /etc/vbox/
 sudo touch /etc/vbox/networks.conf
 sudo sh -c "echo '* 192.168.0.0/16' > /etc/vbox/networks.conf"
+sudo sh -c "echo '* 3001::/64' >> /etc/vbox/networks.conf"
 
 # start building magma
 cd magma/lte/gateway
